@@ -17,14 +17,18 @@ Paradigmas:
 # NomeDoProjeto
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
-**Nro do Grupo**: XX<br>
-**Paradigma**: XXXXXXXXXX<br>
+**Nro do Grupo**: 02<br>
+**Paradigma**: Funcional<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 15/0120702 | Calebe Rios |
+| 18/0015966  |  Emily Dias Sousa |
+| 17/0031438 | Damaso Junio Perereira Brasileo |
+| 18/0063723 | Fellipe Araujo |
+| 17/0013910  |  João Pedro José Santos da Silva Guedes |
+
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
@@ -33,7 +37,7 @@ Descreva o seu projeto em linhas gerais.
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
+**Linguagens**: Haskell<br>
 **Tecnologias**: xxxxxx<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
