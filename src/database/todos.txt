@@ -12,7 +12,7 @@ Arara
 Asno
 Atum
 Avestruz
-Babuíno
+Babuino
 Bacalhau
 Bacuri
 Serpente
@@ -25,7 +25,7 @@ Barracuda
 Besouro
 Bezerro
 Gato
-Gavião
+Gaviao
 Gazela
 Bode
 Boi
@@ -53,7 +53,7 @@ Jabuticaba
 Jaca
 Kiwi
 Laranja
-Limão
+Limao
 Lichia
 Mamao
 Manga
