@@ -1,32 +1,48 @@
+import Data.List
 import System.IO
 import Data.Char
-import Control.Monad
+import System.Random (randomIO)
+import Control.Applicative
+import Display
 
+main :: IO ()
 main =
   do
-    let tempLetterSize = 5
-    displayHangman
-    putStr "  "
-    displayLetters tempLetterSize
-    r <- menu
-    print r
-    putStr " Digite a letra: "
-    readChar
+    word <- menu
+    print word
+    game word maxError
 
-readChar = 
+game :: String -> Int -> IO ()
+game word attemptTimes = 
   do
-    charInput <- getChar
-    putStrLn ""
+    putStrLn $ unlines $ hangDoll (maxError - attemptTimes)
+    putStrLn $ showWord $ word
+    putStrLn $ "Voce tem " ++ show attemptTimes ++ " tentativas restantes."
+    putStrLn $ "Digite uma letra: "
+    attemptLetter <- getLine
+    tryLetter word (head attemptLetter) attemptTimes
 
-displayHangman =
-  putStrLn " _ _ _ _ _\n|\n|\n|\n|\n|\n|"
 
-displayLetters 0 = putStrLn ""
-displayLetters lettersnumber =
-  do
-    putStr "__  "
-    displayLetters (lettersnumber - 1)
+tryLetter :: String -> Char -> Int -> IO()
+tryLetter word letter attemptTimes 
+  | letter `elem` word = game [if letter == a then toUpper letter else a | a <- word] attemptTimes
+  | otherwise = game word (attemptTimes - 1)
 
+
+maxError :: Int
+maxError = length (forceDoll) - 1
+
+
+drawWord :: String -> IO[Char]
+drawWord wordsDictionary = do
+  dictionary <- readFile wordsDictionary
+  let words = lines dictionary
+  let wordsLength = length words
+  randomNumber <- randomIO
+  let randomWord = words !! (randomNumber `mod` wordsLength)
+  return $ randomWord
+
+menu :: IO [Char]
 menu =
   do
     putStrLn "\nSelecione um tema:"
@@ -34,12 +50,12 @@ menu =
     putStrLn "2. Frutas"
     putStrLn "3. Profissoes"
     putStrLn "4. Todos\n"
-    
+
     putStr "Opcao: "
     op <- getLine
-    
-    contents <- case op of  "1" -> readFile "src/database/animais.txt";
-                            "2" -> readFile "src/database/frutas.txt";
-                            "3" -> readFile "src/database/profissoes.txt";
-                            "4" -> readFile "src/database/todos.txt";
-    return contents
+
+    word <- case op of  "1" -> drawWord "./database/animais.txt";
+                        "2" -> drawWord "./database/frutas.txt";
+                        "3" -> drawWord "./database/profissoes.txt";
+                        "4" -> drawWord "./database/todos.txt";
+    return word
