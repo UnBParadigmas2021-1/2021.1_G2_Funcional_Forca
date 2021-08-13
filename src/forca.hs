@@ -17,21 +17,30 @@ game word attemptTimes =
   do
     putStrLn $ unlines $ hangDoll (maxError - attemptTimes)
     putStrLn $ showWord $ word
-    putStrLn $ "Voce tem " ++ show attemptTimes ++ " tentativas restantes."
-    putStrLn $ "Digite uma letra: "
-    attemptLetter <- getLine
-    tryLetter word (head attemptLetter) attemptTimes
 
+    finishGameOrContinue word attemptTimes
 
 tryLetter :: String -> Char -> Int -> IO()
 tryLetter word letter attemptTimes 
   | letter `elem` word = game [if letter == a then toUpper letter else a | a <- word] attemptTimes
   | otherwise = game word (attemptTimes - 1)
 
+tryAgain :: String -> Int -> IO ()
+tryAgain word attemptTimes =
+  do
+    putStrLn $ "Voce tem " ++ show attemptTimes ++ " tentativas restantes."
+    putStrLn $ "Digite uma letra: "
+    attemptLetter <- getLine
+    tryLetter word (head attemptLetter) attemptTimes
+
+finishGameOrContinue :: String -> Int -> IO ()
+finishGameOrContinue word attemptTimes
+  | attemptTimes == 0 = putStrLn "Você perdeu, tente novamente!"
+  | not ('_' `elem` (showWord $ word)) = putStrLn "Parabéns, você acertou a palavra!"
+  | otherwise = tryAgain word attemptTimes
 
 maxError :: Int
 maxError = length (forceDoll) - 1
-
 
 drawWord :: String -> IO[Char]
 drawWord wordsDictionary = do
