@@ -21,4 +21,4 @@ hangDoll index =
     where image = forceDoll !! index
 
 showWord :: String -> String
-showWord word = intersperse ' ' [if a `elem` ['a'..'z'] || a `elem` ['A'..'Z'] then '_' else a | a <- word]
+showWord word = intersperse ' ' [if a `elem` ['a'..'z'] then '_' else a | a <- word]

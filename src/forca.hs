@@ -9,7 +9,6 @@ main :: IO ()
 main =
   do
     word <- menu
-    print word
     game word maxError
 
 game :: String -> Int -> IO ()

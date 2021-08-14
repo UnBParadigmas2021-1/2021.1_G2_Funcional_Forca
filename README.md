@@ -24,8 +24,8 @@ Paradigmas:
 |Matrícula | Aluno |
 | -- | -- |
 | 15/0120702 | Calebe Rios |
-| 18/0015966  |  Emily Dias Sousa |
 | 17/0031438 | Damaso Junio Perereira Brasileo |
+| 18/0015966  |  Emily Dias Sousa |
 | 18/0063723 | Fellipe Araujo |
 | 17/0013910  |  João Pedro José Santos da Silva Guedes |
 
