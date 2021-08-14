@@ -38,12 +38,38 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 
 ## Instalação 
 **Linguagens**: Haskell<br>
-**Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
+
+Linux - Ubuntu
+```bash
+$ sudo apt-get install haskell-platform
+```
+Em outras plataformas segue o link da documentação para instalação : https://www.haskell.org/platform/#osx
 
 ## Uso 
-Explique como usar seu projeto, caso haja algum passo a passo após o comando de execução.
+
+### Linux <br>
+### Dê o git clone do repositório
+
+```bash
+$ https://github.com/UnBParadigmas2021-1/2021.1_G2_Funcional_Forca.git
+```
+### Entre pelo terminal nas pastas
+```bash
+$ 2021.1_G2_Funcional_Forca/src
+```
+### Execute que irá entrar no Haskell
+```bash
+$ ghci
+```
+### Execute essa linha de comando para compilar o código
+```bash
+$ :load forca.hs
+```
+
+### E por fim, execute a main para rodar o programa
+```bash
+$ main
+```
 
 ## Vídeo
 Adicione 1 ou mais vídeos com a execução do projeto.
