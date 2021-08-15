@@ -1,20 +1,4 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-
-**!! *Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(Paradigma)_(NomeDoProjeto)*. !!** 
-
-Paradigmas:
- - Funcional
- - Logico
- - SMA
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2021.1_G1_Logico_ProjetoRoteirosAereos*. !!**
- 
- (Apague essa seção)
-
-# NomeDoProjeto
+# Forca (Hangman)
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
 **Nro do Grupo**: 02<br>
@@ -31,10 +15,12 @@ Paradigmas:
 
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Esse projeto utiliza a linguagem Haskell, e os conhecimentos foi utilizado em forma de jogo, que é o jogo da forca, como tradicionalmente deve ser acertado a palavra para ganhar, e caso contrário o boneco vai morrendo e quando o corpo dele está completo por causa dos erros, dá fim de jogo.
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+![image](https://user-images.githubusercontent.com/52640974/129495421-df6933f2-0b35-4187-8385-2e7b8c9e3bb8.png)
+![image](https://user-images.githubusercontent.com/52640974/129495438-5eb66ec0-8eb1-4ab4-9785-3152946280c9.png)
+![image](https://user-images.githubusercontent.com/52640974/129495464-94ec95b9-28ad-4830-9b46-41e700ce647a.png)
 
 ## Instalação 
 **Linguagens**: Haskell<br>
