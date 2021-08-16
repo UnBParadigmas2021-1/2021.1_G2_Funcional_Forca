@@ -8,7 +8,7 @@
 |Matrícula | Aluno |
 | -- | -- |
 | 15/0120702 | Calebe Rios |
-| 17/0031438 | Damaso Junio Perereira Brasileo |
+| 17/0031438 | Damaso Junio Pereira Brasileo |
 | 18/0015966  |  Emily Dias Sousa |
 | 18/0063723 | Fellipe Araujo |
 | 17/0013910  |  João Pedro José Santos da Silva Guedes |
@@ -58,7 +58,8 @@ $ main
 ```
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PEfdkh_0dHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas a seguir.
