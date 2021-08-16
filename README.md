@@ -59,7 +59,7 @@ $ main
 
 ## Vídeo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PEfdkh_0dHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://img.youtube.com/vi/PEfdkh_0dHY/0.jpg)](https://youtu.be/PEfdkh_0dHY)
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas a seguir.
